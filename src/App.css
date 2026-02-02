@@ -1,0 +1,535 @@
+/* ===== LAYOUT ===== */
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #1B1B1B;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 100%;
+  max-width: 500px;
+  background: #FFFFFF;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow-y: auto;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.lemon-logo {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 1.2;
+}
+
+.share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9E9E9E;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.share-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #666;
+}
+
+.profile-from {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.profile-from .flag {
+  font-size: 14px;
+}
+
+.profile-role {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.role-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0288D1;
+  letter-spacing: 0.3px;
+}
+
+.role-divider {
+  font-size: 14px;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.role-level {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.3px;
+}
+
+.lemon-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lemon-stats-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.stats-row {
+  display: flex;
+  gap: 10px;
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #EFEFEF;
+  padding: 16px 20px;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+}
+
+.verified-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(2, 136, 209, 0.05);
+  border: 1px solid rgba(2, 136, 209, 0.15);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.verified-icon {
+  flex-shrink: 0;
+}
+
+.verified-text {
+  font-size: 14px;
+  color: #0288D1;
+  font-weight: 500;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  background: #FFFFFF;
+  padding: 40px 60px;
+  overflow-y: auto;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.section-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.summary-text {
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.7;
+}
+
+/* ===== EXPERIENCE AREAS ===== */
+.experience-years {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-years-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.area-tag {
+  padding: 5px 12px;
+  background: #F5F5F5;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 400;
+}
+
+/* ===== SKILLS ===== */
+.skills-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 18px;
+  border: 1px dashed #BDBDBD;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.skill-years {
+  font-size: 12px;
+  color: #9E9E9E;
+  font-weight: 400;
+}
+
+.skills-additional {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-extra {
+  padding: 5px 12px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #666;
+  background: transparent;
+}
+
+/* ===== AVAILABILITY & DIRECT HIRE ===== */
+.avail-hire-row {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 32px;
+  padding-top: 8px;
+}
+
+.avail-hire-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avail-hire-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.avail-hire-value {
+  font-size: 14px;
+  color: #9E9E9E;
+}
+
+/* ===== EXPERIENCE HIGHLIGHTS ===== */
+.exp-highlights-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #212121;
+  margin-bottom: 40px;
+  display: inline;
+  background: linear-gradient(to top, #DCFF02 35%, transparent 35%);
+  padding: 0 4px;
+  line-height: 1.5;
+  font-family: 'Outfit', serif;
+}
+
+.exp-highlights-title em {
+  font-style: italic;
+}
+
+/* ===== EXPERIENCE ITEMS ===== */
+.experience-item {
+  margin-bottom: 44px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #BDBDBD;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.exp-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.exp-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #212121;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.exp-date {
+  font-size: 12px;
+  color: #9E9E9E;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.exp-duration {
+  font-size: 12px;
+  color: #9E9E9E;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.exp-body {
+  padding-left: 28px;
+  margin-top: 20px;
+}
+
+.exp-overview {
+  margin-bottom: 14px;
+}
+
+.exp-overview-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.exp-overview-text {
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.7;
+}
+
+.exp-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+  margin-top: 14px;
+}
+
+.category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #555;
+  background: transparent;
+}
+
+.hash-icon {
+  width: 14px;
+  height: 14px;
+  color: #9E9E9E;
+}
+
+.exp-resp {
+  margin-bottom: 22px;
+}
+
+.exp-resp-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.exp-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-responsibilities li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+.exp-responsibilities li::before {
+  content: '\2022';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #404040;
+  font-size: 15px;
+}
+
+.exp-stack {
+  margin-top: 20px;
+}
+
+.exp-stack-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.exp-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  padding: 3px 8px;
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #555;
+  font-weight: 400;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1199px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    min-height: auto;
+    padding: 32px 24px;
+  }
+
+  .main-content {
+    padding: 32px 24px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-name {
+    font-size: 28px;
+  }
+
+  .main-title {
+    font-size: 18px;
+  }
+
+  .exp-title {
+    font-size: 18px;
+  }
+
+  .main-content {
+    padding: 24px 16px;
+  }
+
+  .sidebar {
+    padding: 24px 16px;
+  }
+}
